@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>ZODIAC</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Yummy
+  * Updated: Jan 30 2024 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+    <div data-aos="fade-up" data-aos-delay="50" id="ageVerificationModal" class="modal">
+        <div class="modal-content">
+            <h2>Are you 21 or older?</h2>
+            <div class="button-container">
+                <button id="confirmAgeBtn">Yes</button>
+                <button id="rejectAgeBtn">No</button>
+            </div>
+            <h1 id="accessBlockedMessage" style="display: none; color: red;">You have not reached the required age to view this website.</h1>
+        </div>
+    </div>
+    
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+        <div class="container d-flex align-items-center justify-content-between">
+    
+            <a href="usa.html" class="logo d-flex align-items-center me-auto me-lg-0">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <!-- <img src="assets/img/logo.png" alt=""> -->
+                <img src="assets/img/logo.png">
+            </a>
+    
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#menu">Products</a></li>
+                    <li><a href="#chefs">Aesthetics</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav><!-- .navbar -->
+    
+            <div class="nav-wrapper">
+              <div class="sl-nav">
+                <span>Language: </span>
+                <ul>
+                  <li><b>English</b> <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    <div class="triangle"></div>
+                    <ul>
+                      <li><i class="sl-flag flag-usa"><div id="england"></div></i> <span class="active">English</span></a></li>
+                      <li><a href="ukraine.html"><i class="sl-flag flag-ua"><div id="england"></div></i> <span>Ukrainian</span></a></li>
+                      <li><a href="german.html"><i class="sl-flag flag-de"><div id="england"></div></i> <span>German</span></a></li>
+                      <li><a href="spain.html"><i class="sl-flag flag-esp"><div id="england"></div></i> <span>Spanish</span></a></li>
+                      <li><a href="poland.html"><i class="sl-flag flag-pl"><div id="england"></div></i> <span>Polish</span></a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+    
+        </div>
+    </header><!-- End Header -->    
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center section-bg" style="background-image: url('assets/img/back.jpg');">
+    <div class="container">
+        <div class="row justify-content-between gy-5">
+            <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+                <h2 data-aos="fade-up" style="color: white;">Stars will show you the Way**</h2>
+                <p data-aos="fade-up" data-aos-delay="100" style="color: rgba(126, 126, 133, 0.8);"><i>"Not for everyone, but for All and every day"</i></p>
+                <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+                    <a href="#contact" class="btn-book-a-table">Contact us</a>
+                    <a href="assets/img/about-12.png" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span style="color: rgba(126, 126, 133, 0.8);">Watch</span></a>
+                </div>
+            </div>
+            <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
+                <img src="assets/img/hero-img.png" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
+            </div>
+        </div>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+            <div class="section-header">
+                <h2>About Us</h2>
+                <p>Learn more <span>about us</span></p>
+            </div>
+            <div class="row gy-4">
+                <div class="col-lg-6 position-relative">
+                    <img src="assets/img/about-12.png" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
+                </div>
+                <div class="col-lg-6 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
+                    <div class="content ps-0 ps-lg-5">
+                        <p>
+                            <b>ZODIAC</b> - is a Ukrainian premium hookah tobacco brand, made from natural and high-quality ingredients.
+                            The main principles of the company:
+                        </p>
+                        <ul>
+                            <li><i class="bi bi-check2-all"></i> Quality</li>
+                            <li><i class="bi bi-check2-all"></i> Naturalness</li>
+                            <li><i class="bi bi-check2-all"></i> Versatility</li>
+                        </ul>
+                        <p>
+                            <b>ZODIAC</b> - is not just a hookah smoking blend - it's a whole world and what lies beyond the stratosphere in deep space. It's what the stars in the evening sky point you to, it's something incredibly familiar yet new and esoterically mysterious... it's what will open up completely new emotions for you and satisfy all your desires.
+                        </p>
+                        <div class="position-relative mt-4">
+                            <img src="assets/img/about-2.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- End About Section -->    
+
+    <!-- ======= Why Us Section ======= -->
+<section id="why-us" class="why-us section-bg" style="background-image: url('assets/img/back.jpg');">
+    <div class="container" data-aos="fade-up">
+        <div class="row gy-4">
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="why-box">
+                    <h3>Why Choose <b>ZODIAC</b>?</h3>
+                    <p style="text-align: justify;">
+                        <b>ZODIAC</b> - is a premium Ukrainian tobacco that we all deserve, it's a unique brand made by professionals for professionals and enthusiasts to enjoy a flavorful bowl at home and have a good time with friends. The <b>ZODIAC</b> TOBACCO team consists of experienced individuals in the hookah industry, with over 10 years of experience, and the product itself was in development for over 3 years, meticulously crafted to achieve the highest quality result. <b>ZODIAC</b> is something we've all been familiar with for a long time, subconsciously native, it's something cosmic and unusual, but incredibly delicious. Like in a horoscope, here everyone will find something for themselves...
+                    </p>
+                </div>
+            </div><!-- End Why Box -->
+            <div class="col-lg-8 d-flex align-items-center">
+                <div class="row gy-4">
+                    <div class="col-xl-4 shadowed" data-aos="fade-up" data-aos-delay="200">
+                        <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                            <img src="assets/img/logo-i.png" alt="Your Alt Text">
+                            <h4>Mission</h4>
+                            <p style="text-align: justify;">
+                                To create a brand of a new format for people, through which they can: Easily, affordably, and, most importantly, comfortably choose desired mixes and unique flavors or a comfortable future strength lineup in their city or favorite tobacco store, or on the website where they are used to making purchases. Continuous support and assistance from qualified specialists throughout the cooperation with establishments or stores. Get firsthand experience working with our brand. Enhance their knowledge of mixology and the industry as a whole.
+                            </p>
+                        </div>
+                    </div><!-- End Icon Box -->
+                    <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                            <img src="assets/img/logo-i.png" alt="Your Alt Text">
+                            <h4>Motivation</h4>
+                            <p style="text-align: justify;">
+                                We at <b>ZODIAC</b> believe that a quality product, top-level service, and a whole range of new sensations, emotions, and positivity that you will inhale with the unique aromas of our flavor palette, will make people happy and satisfied. This is what shapes our motivation and is reflected in our reputation.
+                            </p>
+                        </div>
+                    </div><!-- End Icon Box -->
+                    <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
+                        <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                            <img src="assets/img/logo-i.png" alt="Your Alt Text">
+                            <h4>Philosophy</h4>
+                            <p style="text-align: justify;">
+                                The modern world offers such vast and boundless opportunities in the hookah sphere that it can be difficult to make any important choice for yourself. We have collected and analyzed the most relevant aromas and products, selected qualified specialists in order to save your time and conduct it with quality over an aromatic bowl of hookah with your favorite tobacco flavor and strength. Achieving the desired result, getting exactly what you need to realize your dream and enhancing your impressions and skills - we only improve this industry and build a bright future because to change this world for the better, you need to start with yourself.
+                            </p>
+                        </div>
+                    </div><!-- End Icon Box -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- End Why Us Section -->
+
+    <!-- ======= Menu Section ======= -->
+<section id="menu" class="menu">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+            <h2>Products</h2>
+            <p>View our <span>products</span></p>
+        </div>
+
+        <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
+
+            <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-starters">
+                    <h4>Light Line</h4>
+                </a>
+            </li><!-- End tab nav item -->
+
+        </ul>
+
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
+
+            <div class="tab-pane fade active show" id="menu-starters">
+
+                <div class="tab-header text-center">
+                    <p>Products</p>
+                    <h3>Light Line</h3>
+                </div>
+
+                <div class="slides-2 swiper" data-aos="fade-up" data-aos-delay="100">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="row gy-5">
+                                <div class="col-lg-4 menu-item">
+                                    <a href="assets/img/menu/баунті.png" class="glightbox"><img loading="lazy" src="assets/img/menu/баунті.png" class="menu-img img-fluid" alt=""></a>
+                                    <h4>Bounty</h4>
+                                    <p class="ingredients">
+                                        Bounty
+                                    </p>
+                                </div>
+
+                                <div class="col-lg-4 menu-item">
+                                    <a href="assets/img/menu/бузина.png" class="glightbox"><img loading="lazy" src="assets/img/menu/бузина.png" class="menu-img img-fluid" alt=""></a>
+                                    <h4>Elderberry</h4>
+                                    <p class="ingredients">
+                                        Elderberry
+                                    </p>
+                                </div><!-- Menu Item -->
+
+                                <div class="col-lg-4 menu-item">
+                                    <a href="assets/img/menu/вафлі.png" class="glightbox"><img loading="lazy" src="assets/img/menu/вафлі.png" class="menu-img img-fluid" alt=""></a>
+                                    <h4>Belgian Waffles</h4>
+                                    <p class="ingredients">
+                                        Belgian Waffles
+                                    </p>
+                                </div><!-- Menu Item -->
+
+                                <div class="col-lg-4 menu-item">
+                                    <a href="assets/img/menu/виноград.png" class="glightbox"><img loading="lazy" src="assets/img/menu/виноград.png" class="menu-img img-fluid" alt=""></a>
+                                    <h4>Grape</h4>
+                                    <p class="ingredients">
+                                        Grape Juice
+                                    </p>
+                                </div><!-- Menu Item -->
+
+                                <div class="col-lg-4 menu-item">
+                                    <a href="assets/img/menu/вишня.png" class="glightbox"><img loading="lazy" src="assets/img/menu/вишня.png" class="menu-img img-fluid" alt=""></a>
+                                    <h4>Red Cherry</h4>
+                                    <p class="ingredients">
+                                        Red Cherry
+                                    </p>
+                                </div><!-- Menu Item -->
+
+                                <div class="col-lg-4 menu-item">
+                                    <a href="assets/img/menu/грейпфрут.png" class="glightbox"><img loading="lazy" src="assets/img/menu/грейпфрут.png" class="menu-img img-fluid" alt=""></a>
+                                    <h4>Bloody Orange</h4>
+                                    <p class="ingredients">
+                                        Bloody Orange
+                                    </p>
+                                </div><!-- Menu Item -->
+                            </div>
+                        </div>
+
+                <div class="swiper-slide">
+                  <div class="row gy-5">
+                      <div class="col-lg-4 menu-item">
+                          <a href="assets/img/menu/груша.png" class="glightbox"><img loading="lazy" src="assets/img/menu/груша.png" class="menu-img img-fluid" alt=""></a>
+                          <h4>Pear</h4>
+                          <p class="ingredients">
+                              Pear Lemonade
+                          </p>
+                      </div><!-- Menu Item -->
+              
+                      <div class="col-lg-4 menu-item">
+                          <a href="assets/img/menu/екзотік.png" class="glightbox"><img loading="lazy" src="assets/img/menu/екзотік.png" class="menu-img img-fluid" alt=""></a>
+                          <h4>Exotic</h4>
+                          <p class="ingredients">
+                              Exotic
+                          </p>
+                      </div><!-- Menu Item -->
+              
+                      <div class="col-lg-4 menu-item">
+                          <a href="assets/img/menu/енергетик.png" class="glightbox"><img loading="lazy" src="assets/img/menu/енергетик.png" class="menu-img img-fluid" alt=""></a>
+                          <h4>Blue Energy</h4>
+                          <p class="ingredients">
+                              Drink with barberry energy
+                          </p>
+                      </div><!-- Menu Item -->
+              
+                      <div class="col-lg-4 menu-item">
+                          <a href="assets/img/menu/зелений чай.png" class="glightbox"><img loading="lazy" src="assets/img/menu/зелений чай.png" class="menu-img img-fluid" alt=""></a>
+                          <h4>Green Tea</h4>
+                          <p class="ingredients">
+                              Green Tea
+                          </p>
+                      </div><!-- Menu Item -->
+              
+                      <div class="col-lg-4 menu-item">
+                          <a href="assets/img/menu/ківі.png" class="glightbox"><img loading="lazy" src="assets/img/menu/ківі.png" class="menu-img img-fluid" alt=""></a>
+                          <h4>Kiwi</h4>
+                          <p class="ingredients">
+                              Sour kiwi
+                          </p>
+                      </div><!-- Menu Item -->
+              
+                      <div class="col-lg-4 menu-item">
+                          <a href="assets/img/menu/кукурудза.png" class="glightbox"><img loading="lazy" src="assets/img/menu/кукурудза.png" class="menu-img img-fluid" alt=""></a>
+                          <h4>Corn Star</h4>
+                          <p class="ingredients">
+                              Creamy corn
+                          </p>
+                      </div><!-- Menu Item -->
+                  </div>
+              </div>              
+
+              <div class="swiper-slide">
+                <div class="row gy-5">
+                    <div class="col-lg-4 menu-item">
+                        <a href="assets/img/menu/лайм.png" class="glightbox"><img loading="lazy" src="assets/img/menu/лайм.png" class="menu-img img-fluid" alt=""></a>
+                        <h4>Lemon Sparkling Drink</h4>
+                        <p class="ingredients">
+                            Lemon Sparkling Drink
+                        </p>
+                    </div><!-- Menu Item -->
+            
+                    <div class="col-lg-4 menu-item">
+                        <a href="assets/img/menu/лимон.png" class="glightbox"><img loading="lazy" src="assets/img/menu/лимон.png" class="menu-img img-fluid" alt=""></a>
+                        <h4>Lemon Star</h4>
+                        <p class="ingredients">
+                            Lemon Star
+                        </p>
+                    </div><!-- Menu Item -->
+            
+                    <div class="col-lg-4 menu-item">
+                        <a href="assets/img/menu/малина.png" class="glightbox"><img loading="lazy" src="assets/img/menu/малина.png" class="menu-img img-fluid" alt=""></a>
+                        <h4>Raspberry Rose</h4>
+                        <p class="ingredients">
+                            Raspberry Pink Lemonade
+                        </p>
+                    </div><!-- Menu Item -->
+            
+                    <div class="col-lg-4 menu-item">
+                        <a href="assets/img/menu/манго.png" class="glightbox"><img loading="lazy" src="assets/img/menu/манго.png" class="menu-img img-fluid" alt=""></a>
+                        <h4>Mango with Passionfruit</h4>
+                        <p class="ingredients">
+                            Mango with Passionfruit
+                        </p>
+                    </div><!-- Menu Item -->
+            
+                    <div class="col-lg-4 menu-item">
+                        <a href="assets/img/menu/мілкі вей.png" class="glightbox"><img loading="lazy" src="assets/img/menu/мілкі вей.png" class="menu-img img-fluid" alt=""></a>
+                        <h4>Milky Way</h4>
+                        <p class="ingredients">
+                            Condensed Milk
+                        </p>
+                    </div><!-- Menu Item -->
+            
+                    <div class="col-lg-4 menu-item">
+                        <a href="assets/img/menu/тропічне печиво.png" class="glightbox"><img loading="lazy" src="assets/img/menu/тропічне печиво.png" class="menu-img img-fluid" alt=""></a>
+                        <h4>Tropical Cookie</h4>
+                        <p class="ingredients">
+                            Tropical Cookie
+                        </p>
+                    </div><!-- Menu Item -->
+                </div>
+            </div>            
+
+            <div class="swiper-slide">
+              <div class="row gy-5">
+                  <div class="col-lg-4 menu-item">
+                      <a href="assets/img/menu/турбо.png" class="glightbox"><img loading="lazy" src="assets/img/menu/турбо.png" class="menu-img img-fluid" alt=""></a>
+                      <h4>Turbo</h4>
+                      <p class="ingredients">
+                          Chewing Gum with Watermelon and Honeydew
+                      </p>
+                  </div><!-- Menu Item -->
+          
+                  <div class="col-lg-4 menu-item">
+                      <a href="assets/img/menu/цитрусові.png" class="glightbox"><img loading="lazy" src="assets/img/menu/цитрусові.png" class="menu-img img-fluid" alt=""></a>
+                      <h4>Sour Citrus</h4>
+                      <p class="ingredients">
+                          Sour Citrus
+                      </p>
+                  </div><!-- Menu Item -->
+          
+                  <div class="col-lg-4 menu-item">
+                      <a href="assets/img/menu/тропічне смузі.png" class="glightbox"><img loading="lazy" src="assets/img/menu/тропічне смузі.png" class="menu-img img-fluid" alt=""></a>
+                      <h4>Tropical Smoothie</h4>
+                      <p class="ingredients">
+                          Tropical Smoothie
+                      </p>
+                  </div><!-- Menu Item -->
+          
+                  <div class="col-lg-4 menu-item">
+                      <a href="assets/img/menu/чорний чай.png" class="glightbox"><img loading="lazy" src="assets/img/menu/чорний чай.png" class="menu-img img-fluid" alt=""></a>
+                      <h4>Earl Grey</h4>
+                      <p class="ingredients">
+                          Earl Grey
+                      </p>
+                  </div><!-- Menu Item -->
+          
+                  <div class="col-lg-4 menu-item">
+                      <a href="assets/img/menu/ягоди.png" class="glightbox"><img loading="lazy" src="assets/img/menu/ягоди.png" class="menu-img img-fluid" alt=""></a>
+                      <h4>Sour Berries</h4>
+                      <p class="ingredients">
+                          Sour Berries
+                      </p>
+                  </div><!-- Menu Item -->
+              </div>
+          </div>          
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+          </div><!-- End Starter Menu Content -->
+
+        </div>
+
+      </div>
+    </section><!-- End Menu Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+<section id="testimonials" class="testimonials section-bg">
+  <div class="container" data-aos="fade-up">
+    <div class="section-header">
+      <h2>Testimonials</h2>
+      <p>What our customers <span>say about us</span></p>
+    </div>
+    <div class="slides-1 swiper" data-aos="fade-up" data-aos-delay="100">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <div class="row gy-4 justify-content-center">
+              <div class="col-lg-6">
+                <div class="testimonial-content">
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    Absolutely love the rich flavors of this hookah tobacco! It's smooth, aromatic, and provides a satisfying smoking experience. Whether I'm enjoying a session solo or with friends, it always leaves an impression. Highly recommend!
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                  <h3>Saul Goodman</h3>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 text-center">
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="img-fluid testimonial-img" alt="">
+              </div>
+            </div>
+          </div>
+        </div><!-- End testimonial item -->
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <div class="row gy-4 justify-content-center">
+              <div class="col-lg-6">
+                <div class="testimonial-content">
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    There's no doubt, this hookah tobacco is a premium product! The flavors are pronounced and authentic, it burns evenly, providing a long-lasting session. I've tried many brands, but this one stands out for its quality and consistency. A must-have for any hookah enthusiast!
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                  <h3>Sara Wilsson</h3>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 text-center">
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="img-fluid testimonial-img" alt="">
+              </div>
+            </div>
+          </div>
+        </div><!-- End testimonial item -->
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section><!-- End Testimonials Section -->
+
+
+    <!-- ======= Chefs Section ======= -->
+    <section id="chefs" class="chefs section-bg" style="background-image: url('assets/img/back.jpg');">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <p style="color: white;">Aesthetics</p>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="chef-member">
+              <div class="member-img">
+                <img src="assets/img/chefs/chefs-1.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Quality</h4>
+              </div>
+            </div>
+          </div><!-- End Chefs Member -->
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="chef-member">
+              <div class="member-img">
+                <img src="assets/img/chefs/chefs-3.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Naturalness</h4>
+              </div>
+            </div>
+          </div><!-- End Chefs Member -->
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="chef-member">
+              <div class="member-img">
+                <img src="assets/img/chefs/chefs-2.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Versatility</h4>
+              </div>
+            </div>
+          </div><!-- End Chefs Member -->
+
+        </div>
+
+      </div>
+    </section><!-- End Chefs Section -->
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery section-bg" style="background-image: url('assets/img/back.jpg');">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Gallery</h2>
+          <p style="color: white;">View <span>our gallery</span></p>
+        </div>
+
+        <div class="gallery-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-1.jpg"><img src="assets/img/gallery/gallery-1.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-2.jpg"><img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-3.jpg"><img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-4.jpg"><img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-5.jpg"><img src="assets/img/gallery/gallery-5.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-6.jpg"><img src="assets/img/gallery/gallery-6.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-7.jpg"><img src="assets/img/gallery/gallery-7.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-8.jpg"><img src="assets/img/gallery/gallery-8.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-7.jpg"><img src="assets/img/gallery/gallery-11.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-8.jpg"><img src="assets/img/gallery/gallery-12.jpg" class="img-fluid" alt=""></a></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
+
+    <!-- ======= Contact Section ======= -->
+<section id="contact" class="contact">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-header">
+      <h2>Contact</h2>
+      <p>Need assistance? <span>Contact us</span></p>
+    </div>
+
+    <div class="mb-3">
+      <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.1289772910222!2d24.031080777004192!3d49.84003403112642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add6c176fcb09%3A0x9e5d01981d47b06f!2z0LLRg9C70LjRhtGPINCS0LDQu9C-0LLQsCwg0JvRjNCy0ZbQsiwg0JvRjNCy0ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA3OTAwMA!5e0!3m2!1suk!2sua!4v1709482187702!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div><!-- End Google Maps -->
+
+    <div class="row gy-4">
+
+      <div class="col-md-6">
+        <div class="info-item  d-flex align-items-center">
+          <i class="icon bi bi-map flex-shrink-0"></i>
+          <div>
+            <h3>Our Address</h3>
+            <p>18a Valova Street, Lviv, 00000 - Ukraine</p>
+          </div>
+        </div>
+      </div><!-- End Info Item -->
+
+      <div class="col-md-6">
+        <div class="info-item d-flex align-items-center">
+          <i class="icon bi bi-envelope flex-shrink-0"></i>
+          <div>
+            <h3>Write to Us</h3>
+            <p>zodiac@gmail.com</p>
+          </div>
+        </div>
+      </div><!-- End Info Item -->
+
+      <div class="col-md-6">
+        <div class="info-item  d-flex align-items-center">
+          <i class="icon bi bi-telephone flex-shrink-0"></i>
+          <div>
+            <h3>Call Us</h3>
+            <p>+38 0000000000</p>
+          </div>
+        </div>
+      </div><!-- End Info Item -->
+
+      <div class="col-md-6">
+        <div class="info-item  d-flex align-items-center">
+          <i class="icon bi bi-share flex-shrink-0"></i>
+          <div>
+            <h3>Business Hours</h3>
+            <div><strong>Mon-Sat:</strong> 9:00 - 18:00; <strong>Sunday:</strong> Closed</div>
+          </div>
+        </div>
+      </div><!-- End Info Item -->
+
+    </div>
+
+    <form action="forms/contact.php" method="post" role="form" class="php-email-form p-3 p-md-4">
+      <div class="row">
+        <div class="col-xl-6 form-group">
+          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+        </div>
+        <div class="col-xl-6 form-group">
+          <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+      </div>
+      <div class="form-group">
+        <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+      </div>
+      <div class="my-3">
+        <div class="loading">Loading</div>
+        <div class="error-message"></div>
+        <div class="sent-message">Your message has been sent. Thank you!</div>
+      </div>
+      <div class="text-center"><button type="submit">Send Message</button></div>
+    </form><!-- End Contact Form -->
+
+  </div>
+</section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+<footer id="footer" class="footer">
+
+  <div class="container">
+    <div class="row gy-3">
+      <div class="col-lg-3 col-md-6 d-flex">
+        <i class="bi bi-geo-alt icon"></i>
+        <div>
+          <h4>Address</h4>
+          <p>
+            18a Valova Street <br>
+            Lviv, 00000 - Ukraine<br>
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 footer-links d-flex">
+        <i class="bi bi-telephone icon"></i>
+        <div>
+          <h4>Place an Order</h4>
+          <p>
+            <strong>Phone:</strong> +38 0000000000<br>
+            <strong>Email:</strong> zodiac@gmail.com<br>
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 footer-links d-flex">
+        <i class="bi bi-clock icon"></i>
+        <div>
+          <h4>Business Hours</h4>
+          <p>
+            <strong>Mon-Sat:</strong> 9:00 - 18:00<br>
+            Sunday: Closed
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 footer-links">
+        <h4>Follow Us</h4>
+        <div class="social-links d-flex">
+          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="copyright">
+      &copy; Copyright <strong><span>ZODIAC</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/ -->
+    </div>
+  </div>
+
+</footer><!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    var ageVerificationModal = document.getElementById('ageVerificationModal');
+    var confirmAgeBtn = document.getElementById('confirmAgeBtn');
+    var rejectAgeBtn = document.getElementById('rejectAgeBtn');
+    var accessBlockedMessage = document.getElementById('accessBlockedMessage');
+
+    // Show the age verification modal
+    ageVerificationModal.style.display = 'block';
+
+    // Add event listener to the confirm age button
+    confirmAgeBtn.addEventListener('click', function () {
+        // Assuming the user confirms their age
+        // You can add further checks if needed
+
+        // Hide the age verification modal
+        ageVerificationModal.style.display = 'none';
+    });
+
+    // Add event listener to the reject age button
+    rejectAgeBtn.addEventListener('click', function () {
+        // Display access blocked message
+        accessBlockedMessage.style.display = 'block';
+        // Hide the confirm age button
+        confirmAgeBtn.style.display = 'none';
+        rejectAgeBtn.style.display = 'none';
+        // Disable scrolling
+        document.body.style.overflow = 'hidden';
+    });
+});
+  </script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

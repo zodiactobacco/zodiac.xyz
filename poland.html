@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>ZODIAC</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Yummy
+  * Updated: Jan 30 2024 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+    <div data-aos="fade-up" data-aos-delay="50" id="ageVerificationModal" class="modal">
+        <div class="modal-content">
+            <h2>Czy masz już 21 lat?</h2>
+            <div class="button-container">
+                <button id="confirmAgeBtn">Tak</button>
+                <button id="rejectAgeBtn">Nie</button>
+            </div>
+            <h1 id="accessBlockedMessage" style="display: none; color: red;">Nie osiągnąłeś jeszcze wymaganego wieku, aby przeglądać tę stronę.</h1>
+        </div>
+    </div>    
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a href="poland.html" class="logo d-flex align-items-center me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <img src="assets/img/logo.png">
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+            <li><a href="#hero">Strona główna</a></li>
+            <li><a href="#about">O nas</a></li>
+            <li><a href="#menu">Produkty</a></li>
+            <li><a href="#chefs">Estetyka</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav><!-- .navbar -->    
+    
+    <div class="nav-wrapper">
+        <div class="sl-nav">
+            <span>Język: </span>
+            <ul>
+                <li><b>Polski</b> <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    <div class="triangle"></div>
+                    <ul>
+                        <li><i class="sl-flag flag-pl"><div id="ukraine"></div></i> <span class="active">Polski</span></li>
+                        <li><a href="usa.html"><i class="sl-flag flag-usa"><div id="ukraine"></div></i> <span>Angielski</span></a></li>
+                        <li><a href="german.html"><i class="sl-flag flag-de"><div id="ukraine"></div></i> <span>Niemiecki</span></a></li>
+                        <li><a href="ukraine.html"><i class="sl-flag flag-ua"><div id="ukraine"></div></i> <span>Ukraiński</span></a></li>
+                        <li><a href="spain.html"><i class="sl-flag flag-esp"><div id="ukraine"></div></i> <span>Hiszpański</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>    
+
+    <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+    <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Sekcja bohatera ======= -->
+  <section id="hero" class="hero d-flex align-items-center section-bg" style="background-image: url('assets/img/back.jpg');">
+    <div class="container">
+      <div class="row justify-content-between gy-5">
+        <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+          <h2 data-aos="fade-up" style="color: white;">Gwiazdy wskażą ci drogę**</h2>
+          <p data-aos="fade-up" data-aos-delay="100" style="color: rgba(126, 126, 133, 0.8);"><i>"Nie dla każdego, ale dla wszystkich i na każdy dzień"</i></p>
+          <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+            <a href="#contact" class="btn-book-a-table">Skontaktuj się z nami</a>
+            <a href="assets/img/about-12.png" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span style="color: rgba(126, 126, 133, 0.8);">Oglądaj</span></a>
+          </div>
+        </div>
+        <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
+          <img src="assets/img/hero-img.png" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= Sekcja o nas ======= -->
+<section id="about" class="about">
+    <div class="container" data-aos="fade-up">
+  
+      <div class="section-header">
+        <h2>O nas</h2>
+        <p>Dowiedz się więcej <span>o nas</span></p>
+      </div>
+  
+      <div class="row gy-4">
+        <div class="col-lg-6 position-relative">
+          <img src="assets/img/about-12.png" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
+        </div>
+        <div class="col-lg-6 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
+          <div class="content ps-0 ps-lg-5">
+            <p>
+              <b>ZODIAC</b> - to ukraińska marka premium tytoniu do fajki wodnej, wykonana na bazie naturalnych składników wysokiej jakości. Główne zasady firmy:
+            </p>
+            <ul>
+              <li><i class="bi bi-check2-all"></i> Jakość</li>
+              <li><i class="bi bi-check2-all"></i> Naturalność</li>
+              <li><i class="bi bi-check2-all"></i> Wielowymiarowość</li>
+            </ul>
+            <p>
+              <b>ZODIAC</b> - to nie tylko mieszanka do palenia fajki wodnej - to cały świat i to, co poza stratosferą, głęboko w kosmosie. To coś, na co wskazują ci z gwiazd na nocnym niebie, to coś niewypowiedzianie znajomego, ale jednocześnie nowego i ezoterycznie tajemniczego... to coś, co otworzy dla ciebie zupełnie nowe emocje i zaspokoi wszystkie twoje pragnienia.
+            </p>
+  
+            <div class="position-relative mt-4">
+              <img src="assets/img/about-2.png" class="img-fluid" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </section><!-- Koniec sekcji O nas -->  
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us section-bg" style="background-image: url('assets/img/back.jpg');">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="why-box">
+                    <h3>Dlaczego warto wybrać <b>ZODIAC</b>?</h3>
+                    <p style="text-align: justify;">
+                        <b>ZODIAC</b> to wysokiej jakości ukraiński tytoń, na który wszyscy zasługujemy. To wyjątkowa marka stworzona przez profesjonalistów dla profesjonalistów i miłośników relaksu w domowym zaciszu. Zespół <b>ZODIAC</b> TOBACCO to doświadczeni ludzie w branży kultury wodnej fajki, a produkt był w fazie rozwoju przez ponad 3 lata, aby osiągnąć ostateczny, maksymalnie wysoki standard jakości.
+                        <b>ZODIAC</b> to coś, co jest nam wszystkim dobrze znane i bliskie, to coś kosmicznego i niezwykłego, ale niezwykle smacznego. Podobnie jak w horoskopie, tutaj każdy znajdzie coś dla siebie...
+                    </p>
+                </div>
+            </div><!-- Koniec Boxu Dlaczego -->            
+
+            <div class="col-lg-8 d-flex align-items-center">
+                <div class="row gy-4">
+            
+                    <div class="col-xl-4 shadowed" data-aos="fade-up" data-aos-delay="200">
+                        <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                            <img src="assets/img/logo-i.png" alt="Twój tekst zastępczy">
+                            <h4>Misja</h4>
+                            <p style="text-align: justify;">
+                                Tworzenie marki nowego formatu, dzięki której ludzie mogą:
+                                Łatwo, dostępnie i przede wszystkim wygodnie wybierać ulubione mieszanki i unikatowe smaki lub wygodną przyszłą linie mocy w swoim mieście lub ulubionym sklepie z tytoniem, lub na stronie internetowej, na której są przyzwyczajeni do robienia zakupów.
+                                Stałe wsparcie i pomoc wykwalifikowanych specjalistów przez całą współpracę z placówkami lub sklepami. Pozyskanie bezpośredniego doświadczenia w pracy z naszą marką. Podnoszenie swojej wiedzy na temat mieszania i przemysłu ogólnie.
+                            </p>
+                        </div>
+                    </div><!-- Koniec Boxu Ikony -->
+            
+                    <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                            <img src="assets/img/logo-i.png" alt="Twój tekst zastępczy">
+                            <h4>Motywacja</h4>
+                            <p style="text-align: justify;">
+                                W firmie <b>ZODIAC</b> wierzymy, że wysokiej jakości produkt, obsługa na najwyższym poziomie i cała gama nowych doznań, emocji i pozytywnej energii, którą wciągniesz z unikalnymi aromatami naszej palety smaków, sprawią, że ludzie będą szczęśliwi i zadowoleni.
+                                To właśnie kształtuje naszą motywację i odzwierciedla się w naszej reputacji.                    
+                            </p>
+                        </div>
+                    </div><!-- Koniec Boxu Ikony -->
+            
+                    <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
+                        <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                            <img src="assets/img/logo-i.png" alt="Twój tekst zastępczy">
+                            <h4>Filozofia</h4>
+                            <p style="text-align: justify;">
+                                W dzisiejszym świecie kultura fajki wodnej ma tak ogromne i nieograniczone możliwości, że czasami trudno podjąć jakiekolwiek istotne decyzje.
+                                Zebraliśmy i przeanalizowaliśmy najbardziej aktualne aromaty i produkty, dobraliśmy wykwalifikowanych specjalistów, aby zaoszczędzić twój czas i zapewnić jego jakość, prowadząc cię w aromatycznej podróży z twoją ulubioną mocą i smakiem tytoniu.
+                                Osiągnąwszy pożądany wynik, dostając dokładnie to, czego potrzebujesz do spełnienia swoich marzeń i podnosząc swoje wrażenia i umiejętności - tylko polepszamy tę branżę i budujemy jasną przyszłość, bo aby zmienić ten świat na lepsze, trzeba zacząć od siebie.
+                            </p>
+                        </div>
+                    </div><!-- Koniec Boxu Ikony -->            
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Menu Section ======= -->
+    <section id="menu" class="menu">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+            <h2>Produkty</h2>
+            <p>Przejrzyj nasze <span>produkty</span></p>
+        </div>        
+
+        <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
+
+            <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-starters">
+                    <h4>Lekka linia</h4>
+                </a>
+            </li><!-- End tab nav item -->            
+
+        </ul>
+
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
+
+          <div class="tab-pane fade active show" id="menu-starters">
+
+            <div class="tab-header text-center">
+                <p>Produkty</p>
+                <h3>Lekka linia</h3>
+            </div>            
+
+            <div class="slides-2 swiper" data-aos="fade-up" data-aos-delay="100">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="row gy-5">
+                    <div class="col-lg-4 menu-item">
+                        <a href="assets/img/menu/баунті.png" class="glightbox"><img loading="lazy" src="assets/img/menu/баунті.png" class="menu-img img-fluid" alt=""></a>
+                        <h4>Bounty</h4>
+                        <p class="ingredients">
+                            Bounty
+                        </p>
+                    </div>
+                    
+                    <div class="col-lg-4 menu-item">
+                        <a href="assets/img/menu/бузина.png" class="glightbox"><img loading="lazy" src="assets/img/menu/бузина.png" class="menu-img img-fluid" alt=""></a>
+                        <h4>Bzuina</h4>
+                        <p class="ingredients">
+                            Bzuina
+                        </p>
+                    </div>
+                    
+                    <div class="col-lg-4 menu-item">
+                        <a href="assets/img/menu/вафлі.png" class="glightbox"><img loading="lazy" src="assets/img/menu/вафлі.png" class="menu-img img-fluid" alt=""></a>
+                        <h4>Belgijskie wafle</h4>
+                        <p class="ingredients">
+                            Belgijskie wafle
+                        </p>
+                    </div>
+                    
+                    <div class="col-lg-4 menu-item">
+                        <a href="assets/img/menu/виноград.png" class="glightbox"><img loading="lazy" src="assets/img/menu/виноград.png" class="menu-img img-fluid" alt=""></a>
+                        <h4>Winogrona</h4>
+                        <p class="ingredients">
+                            Sok winogronowy
+                        </p>
+                    </div>
+                    
+                    <div class="col-lg-4 menu-item">
+                        <a href="assets/img/menu/вишня.png" class="glightbox"><img loading="lazy" src="assets/img/menu/вишня.png" class="menu-img img-fluid" alt=""></a>
+                        <h4>Czerwona wiśnia</h4>
+                        <p class="ingredients">
+                            Czerwona wiśnia
+                        </p>
+                    </div>
+                    
+                    <div class="col-lg-4 menu-item">
+                        <a href="assets/img/menu/грейпфрут.png" class="glightbox"><img loading="lazy" src="assets/img/menu/грейпфрут.png" class="menu-img img-fluid" alt=""></a>
+                        <h4>Krwawy pomarańcz</h4>
+                        <p class="ingredients">
+                            Krwawy pomarańcz
+                        </p>
+                    </div>                    
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="row gy-5">
+                    <div class="col-lg-4 menu-item">
+                        <a href="assets/img/menu/груша.png" class="glightbox"><img loading="lazy" src="assets/img/menu/груша.png" class="menu-img img-fluid" alt=""></a>
+                        <h4>Gruszka</h4>
+                        <p class="ingredients">
+                            Gruszkowy lemoniad
+                        </p>
+                    </div><!-- Menu Item -->
+                    
+                    <div class="col-lg-4 menu-item">
+                        <a href="assets/img/menu/екзотік.png" class="glightbox"><img loading="lazy" src="assets/img/menu/екзотік.png" class="menu-img img-fluid" alt=""></a>
+                        <h4>Egzotyczny</h4>
+                        <p class="ingredients">
+                            Egzotyczny
+                        </p>
+                    </div><!-- Menu Item -->
+                    
+                    <div class="col-lg-4 menu-item">
+                        <a href="assets/img/menu/енергетик.png" class="glightbox"><img loading="lazy" src="assets/img/menu/енергетик.png" class="menu-img img-fluid" alt=""></a>
+                        <h4>Niebieska energia</h4>
+                        <p class="ingredients">
+                            Napój z energia barberry
+                        </p>
+                    </div><!-- Menu Item -->
+                    
+                    <div class="col-lg-4 menu-item">
+                        <a href="assets/img/menu/зелений чай.png" class="glightbox"><img loading="lazy" src="assets/img/menu/зелений чай.png" class="menu-img img-fluid" alt=""></a>
+                        <h4>Zielona herbata</h4>
+                        <p class="ingredients">
+                            Zielona herbata
+                        </p>
+                    </div><!-- Menu Item -->
+                    
+                    <div class="col-lg-4 menu-item">
+                        <a href="assets/img/menu/ківі.png" class="glightbox"><img loading="lazy" src="assets/img/menu/ківі.png" class="menu-img img-fluid" alt=""></a>
+                        <h4>Kiwi</h4>
+                        <p class="ingredients">
+                            Kwaśne kiwi
+                        </p>
+                    </div><!-- Menu Item -->
+                    
+                    <div class="col-lg-4 menu-item">
+                        <a href="assets/img/menu/кукурудза.png" class="glightbox"><img loading="lazy" src="assets/img/menu/кукурудза.png" class="menu-img img-fluid" alt=""></a>
+                        <h4>Kukurydza gwiazda</h4>
+                        <p class="ingredients">
+                            Kremowa kukurydza
+                        </p>
+                    </div><!-- Menu Item -->                    
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="row gy-5">
+                    <div class="col-lg-4 menu-item">
+                        <a href="assets/img/menu/лайм.png" class="glightbox"><img loading="lazy" src="assets/img/menu/лайм.png" class="menu-img img-fluid" alt=""></a>
+                        <h4>Limonkowy napój gazowany</h4>
+                        <p class="ingredients">
+                            Limonkowy napój gazowany
+                        </p>
+                    </div><!-- Menu Item -->
+                    
+                    <div class="col-lg-4 menu-item">
+                        <a href="assets/img/menu/лимон.png" class="glightbox"><img loading="lazy" src="assets/img/menu/лимон.png" class="menu-img img-fluid" alt=""></a>
+                        <h4>Limonkowa gwiazda</h4>
+                        <p class="ingredients">
+                            Limonkowa gwiazda
+                        </p>
+                    </div><!-- Menu Item -->
+                    
+                    <div class="col-lg-4 menu-item">
+                        <a href="assets/img/menu/малина.png" class="glightbox"><img loading="lazy" src="assets/img/menu/малина.png" class="menu-img img-fluid" alt=""></a>
+                        <h4>Malinowa róża</h4>
+                        <p class="ingredients">
+                            Malinowy różowy napój gazowany
+                        </p>
+                    </div><!-- Menu Item -->
+                    
+                    <div class="col-lg-4 menu-item">
+                        <a href="assets/img/menu/манго.png" class="glightbox"><img loading="lazy" src="assets/img/menu/манго.png" class="menu-img img-fluid" alt=""></a>
+                        <h4>Mango z marakują</h4>
+                        <p class="ingredients">
+                            Mango z marakują
+                        </p>
+                    </div><!-- Menu Item -->
+                    
+                    <div class="col-lg-4 menu-item">
+                        <a href="assets/img/menu/мілкі вей.png" class="glightbox"><img loading="lazy" src="assets/img/menu/мілкі вей.png" class="menu-img img-fluid" alt=""></a>
+                        <h4>Mleczna droga</h4>
+                        <p class="ingredients">
+                            Skondensowane mleko
+                        </p>
+                    </div><!-- Menu Item -->
+                    
+                    <div class="col-lg-4 menu-item">
+                        <a href="assets/img/menu/тропічне печиво.png" class="glightbox"><img loading="lazy" src="assets/img/menu/тропічне печиво.png" class="menu-img img-fluid" alt=""></a>
+                        <h4>Tropikalne ciastko</h4>
+                        <p class="ingredients">
+                            Tropikalne ciastko
+                        </p>
+                    </div><!-- Menu Item -->                    
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="row gy-5">
+                    <div class="col-lg-4 menu-item">
+                        <a href="assets/img/menu/турбо.png" class="glightbox"><img loading="lazy" src="assets/img/menu/турбо.png" class="menu-img img-fluid" alt=""></a>
+                        <h4>Turbo</h4>
+                        <p class="ingredients">
+                            Żelka z dynią i arbuzem
+                        </p>
+                    </div><!-- Menu Item -->
+                    
+                    <div class="col-lg-4 menu-item">
+                        <a href="assets/img/menu/цитрусові.png" class="glightbox"><img loading="lazy" src="assets/img/menu/цитрусові.png" class="menu-img img-fluid" alt=""></a>
+                        <h4>Kwaśny cytrus</h4>
+                        <p class="ingredients">
+                            Kwaśny cytrus
+                        </p>
+                    </div><!-- Menu Item -->
+                    
+                    <div class="col-lg-4 menu-item">
+                        <a href="assets/img/menu/тропічне смузі.png" class="glightbox"><img loading="lazy" src="assets/img/menu/тропічне смузі.png" class="menu-img img-fluid" alt=""></a>
+                        <h4>Tropikalny smoothie</h4>
+                        <p class="ingredients">
+                            Tropikalny smoothie
+                        </p>
+                    </div><!-- Menu Item -->
+                    
+                    <div class="col-lg-4 menu-item">
+                        <a href="assets/img/menu/чорний чай.png" class="glightbox"><img loading="lazy" src="assets/img/menu/чорний чай.png" class="menu-img img-fluid" alt=""></a>
+                        <h4>Earl Grey</h4>
+                        <p class="ingredients">
+                            Earl Grey
+                        </p>
+                    </div><!-- Menu Item -->
+                    
+                    <div class="col-lg-4 menu-item">
+                        <a href="assets/img/menu/ягоди.png" class="glightbox"><img loading="lazy" src="assets/img/menu/ягоди.png" class="menu-img img-fluid" alt=""></a>
+                        <h4>Kwaśne jagody</h4>
+                        <p class="ingredients">
+                            Kwaśne jagody
+                        </p>
+                    </div><!-- Menu Item -->                    
+                  </div>
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+          </div><!-- End Starter Menu Content -->
+
+        </div>
+
+      </div>
+    </section><!-- End Menu Section -->
+
+    <!-- ======= Sekcja referencji ======= -->
+<section id="testimonials" class="testimonials section-bg">
+    <div class="container" data-aos="fade-up">
+  
+      <div class="section-header">
+        <h2>Referencje</h2>
+        <p>Co mówią o nas <span>nasi konsumenci</span></p>
+      </div>
+  
+      <div class="slides-1 swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper">
+  
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <div class="row gy-4 justify-content-center">
+                <div class="col-lg-6">
+                  <div class="testimonial-content">
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      Absolutnie uwielbiam bogate smaki tego tytoniu do shishy! Jest gładki, aromatyczny i dostarcza przyjemności z palenia. Bez względu na to, czy delektuję się sesją samodzielnie czy z przyjaciółmi, zawsze robi wrażenie. Bardzo polecam!
+                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                    <h3>Saul Goodman</h3>
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 text-center">
+                  <img src="assets/img/testimonials/testimonials-1.jpg" class="img-fluid testimonial-img" alt="">
+                </div>
+              </div>
+            </div>
+          </div><!-- Koniec elementu referencji -->
+  
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <div class="row gy-4 justify-content-center">
+                <div class="col-lg-6">
+                  <div class="testimonial-content">
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      Nie ma żadnych wątpliwości, ten tytoń do shishy to produkt premium! Smaki są wyraźne i autentyczne, równomiernie się pali, zapewniając długą sesję. Próbowałem wielu marek, ale ta wyróżnia się jakością i stabilnością. Obowiązkowy element asortymentu dla każdego miłośnika shishy!
+                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                    <h3>Sara Wilsson</h3>
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 text-center">
+                  <img src="assets/img/testimonials/testimonials-2.jpg" class="img-fluid testimonial-img" alt="">
+                </div>
+              </div>
+            </div>
+          </div><!-- Koniec elementu referencji -->
+  
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+  
+    </div>
+  </section><!-- Koniec sekcji referencji -->  
+
+    <!-- ======= Sekcja Szefów Kuchni ======= -->
+<section id="chefs" class="chefs section-bg" style="background-image: url('assets/img/back.jpg');">
+    <div class="container" data-aos="fade-up">
+  
+      <div class="section-header">
+        <p style="color: white;">Estetyka</p>
+      </div>
+  
+      <div class="row gy-4">
+  
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="chef-member">
+            <div class="member-img">
+              <img src="assets/img/chefs/chefs-1.jpg" class="img-fluid" alt="">
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Jakość</h4>
+            </div>
+          </div>
+        </div><!-- Koniec Szefa Kuchni -->
+  
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+          <div class="chef-member">
+            <div class="member-img">
+              <img src="assets/img/chefs/chefs-3.jpg" class="img-fluid" alt="">
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Naturalność</h4>
+            </div>
+          </div>
+        </div><!-- Koniec Szefa Kuchni -->
+  
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+          <div class="chef-member">
+            <div class="member-img">
+              <img src="assets/img/chefs/chefs-2.jpg" class="img-fluid" alt="">
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Wielostronność</h4>
+            </div>
+          </div>
+        </div><!-- Koniec Szefa Kuchni -->
+  
+      </div>
+  
+    </div>
+  </section><!-- Koniec Sekcji Szefów Kuchni -->  
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery section-bg" style="background-image: url('assets/img/back.jpg');">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+            <h2>Galeria</h2>
+            <p style="color: white;">Zobacz <span>naszą galerię</span></p>
+          </div>          
+
+        <div class="gallery-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-1.jpg"><img src="assets/img/gallery/gallery-1.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-2.jpg"><img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-3.jpg"><img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-4.jpg"><img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-5.jpg"><img src="assets/img/gallery/gallery-5.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-6.jpg"><img src="assets/img/gallery/gallery-6.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-7.jpg"><img src="assets/img/gallery/gallery-7.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-8.jpg"><img src="assets/img/gallery/gallery-8.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-7.jpg"><img src="assets/img/gallery/gallery-11.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-8.jpg"><img src="assets/img/gallery/gallery-12.jpg" class="img-fluid" alt=""></a></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
+
+    <!-- ======= Sekcja Kontaktowa ======= -->
+<section id="contact" class="contact">
+    <div class="container" data-aos="fade-up">
+  
+      <div class="section-header">
+        <h2>Kontakt</h2>
+        <p>Potrzebujesz pomocy? <span>Skontaktuj się z nami</span></p>
+      </div>
+  
+      <div class="mb-3">
+        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.1289772910222!2d24.031080777004192!3d49.84003403112642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add6c176fcb09%3A0x9e5d01981d47b06f!2z0LLRg9C70LjRhtGPINCS0LDQu9C-0LLQsCwg0JvRjNCy0ZbQsiwg0JvRjNCy0ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA3OTAwMA!5e0!3m2!1suk!2sua!4v1709482187702!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div><!-- End Google Maps -->
+  
+      <div class="row gy-4">
+  
+        <div class="col-md-6">
+          <div class="info-item  d-flex align-items-center">
+            <i class="icon bi bi-map flex-shrink-0"></i>
+            <div>
+              <h3>Nasz adres</h3>
+              <p>ul. Walońska 18a, Lwów, 00000 - Ukraina</p>
+            </div>
+          </div>
+        </div><!-- End Info Item -->
+  
+        <div class="col-md-6">
+          <div class="info-item d-flex align-items-center">
+            <i class="icon bi bi-envelope flex-shrink-0"></i>
+            <div>
+              <h3>Napisz do nas</h3>
+              <p>zodiac@gmail.com</p>
+            </div>
+          </div>
+        </div><!-- End Info Item -->
+  
+        <div class="col-md-6">
+          <div class="info-item  d-flex align-items-center">
+            <i class="icon bi bi-telephone flex-shrink-0"></i>
+            <div>
+              <h3>Zadzwoń do nas</h3>
+              <p>+38 0000000000</p>
+            </div>
+          </div>
+        </div><!-- End Info Item -->
+  
+        <div class="col-md-6">
+          <div class="info-item  d-flex align-items-center">
+            <i class="icon bi bi-share flex-shrink-0"></i>
+            <div>
+              <h3>Godziny pracy</h3>
+              <div><strong>Pon-Sob:</strong> 9:00 - 18:00;
+                <strong>Niedziela:</strong> Zamknięte
+              </div>
+            </div>
+          </div>
+        </div><!-- End Info Item -->
+  
+      </div>
+  
+      <form action="forms/contact.php" method="post" role="form" class="php-email-form p-3 p-md-4">
+        <div class="row">
+          <div class="col-xl-6 form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Twoje imię" required>
+          </div>
+          <div class="col-xl-6 form-group">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Twój adres email" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" name="subject" id="subject" placeholder="Temat" required>
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" name="message" rows="5" placeholder="Wiadomość" required></textarea>
+        </div>
+        <div class="my-3">
+          <div class="loading">Ładowanie</div>
+          <div class="error-message"></div>
+          <div class="sent-message">Twoja wiadomość została wysłana. Dziękujemy!</div>
+        </div>
+        <div class="text-center"><button type="submit">Wyślij wiadomość</button></div>
+      </form><!-- End Contact Form -->
+  
+    </div>
+  </section><!-- End Contact Section -->  
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-geo-alt icon"></i>
+          <div>
+            <h4>Adres</h4>
+            <p>
+              ul. Valova 18a <br>
+              Lwów, 00000 - Ukraina<br>
+            </p>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-telephone icon"></i>
+          <div>
+            <h4>Zamówienia</h4>
+            <p>
+              <strong>Telefon:</strong> +38 0000000000<br>
+              <strong>Email:</strong> zodiac@gmail.com<br>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-clock icon"></i>
+          <div>
+            <h4>Godziny otwarcia</h4>
+            <p>
+              <strong>Pon-Sob:</strong> 9:00 - 18:00<br>
+              Niedziela: Zamknięte
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Śledź nas</h4>
+          <div class="social-links d-flex">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Prawa autorskie <strong><span>ZODIAC</span></strong>. Wszelkie prawa zastrzeżone
+      </div>
+      <div class="credits">
+        <!-- Wszystkie linki w stopce powinny pozostać nietknięte. -->
+        <!-- Linki można usunąć tylko w przypadku zakupu wersji Pro. -->
+        <!-- Informacje o licencji: https://bootstrapmade.com/license/ -->
+        <!-- Zakup wersji Pro z działającym formularzem kontaktowym PHP/AJAX: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/ -->
+      </div>
+    </div>
+
+</footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    var ageVerificationModal = document.getElementById('ageVerificationModal');
+    var confirmAgeBtn = document.getElementById('confirmAgeBtn');
+    var rejectAgeBtn = document.getElementById('rejectAgeBtn');
+    var accessBlockedMessage = document.getElementById('accessBlockedMessage');
+
+    // Show the age verification modal
+    ageVerificationModal.style.display = 'block';
+
+    // Add event listener to the confirm age button
+    confirmAgeBtn.addEventListener('click', function () {
+        // Assuming the user confirms their age
+        // You can add further checks if needed
+
+        // Hide the age verification modal
+        ageVerificationModal.style.display = 'none';
+    });
+
+    // Add event listener to the reject age button
+    rejectAgeBtn.addEventListener('click', function () {
+        // Display access blocked message
+        accessBlockedMessage.style.display = 'block';
+        // Hide the confirm age button
+        confirmAgeBtn.style.display = 'none';
+        rejectAgeBtn.style.display = 'none';
+        // Disable scrolling
+        document.body.style.overflow = 'hidden';
+    });
+});
+  </script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
