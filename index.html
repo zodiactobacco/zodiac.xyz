@@ -50,11 +50,21 @@
     </div>
   </div>
 
+  <!-- Поп-ап вікно для авторизації -->
+<div data-aos="fade-up" data-aos-delay="50" id="overlay" class="modal">
+  <div id="login-box">
+    <h2>Авторизація</h2>
+    <input type="text" id="username" placeholder="Логін"><br><br>
+    <input type="password" id="password" placeholder="Пароль"><br><br>
+    <button id="confirmAgeBtn" style="display: block; margin: 0 auto; text-align: center;"  onclick="authenticate()">Увійти</button>
+  </div>
+</div>
+
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <a href="ukraine.html" class="logo d-flex align-items-center me-auto me-lg-0">
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <img src="assets/img/logo.png">
@@ -99,8 +109,8 @@
     <div class="container">
       <div class="row justify-content-between gy-5">
         <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
-          <h2 data-aos="fade-up" style="color: white;">Зірки вкажуть тобі шлях**</h2>
-          <p data-aos="fade-up" data-aos-delay="100" style="color: rgba(126, 126, 133, 0.8);"><i>"Не для кожного, а для Всіх і на кожен день"</i></p>
+          <h2 id="hero1" data-aos="fade-up" style="color: white;">Зірки вкажуть тобі шлях**</h2>
+          <p id="hero2" data-aos="fade-up" data-aos-delay="100" style="color: rgba(126, 126, 133, 0.8);"><i>"Не для кожного, а для Всіх і на кожен день"</i></p>
           <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
             <a href="#contact" class="btn-book-a-table">Зв'яжіться з нами</a>
             <a href="assets/img/about-12.png" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span style="color: rgba(126, 126, 133, 0.8);">Перегляд</span></a>
@@ -130,7 +140,7 @@
           </div>
           <div class="col-lg-6 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
             <div class="content ps-0 ps-lg-5">
-              <p id="aboutText1">
+              <p id="about1">
                 <b>ZODIAC</b> - це український бренд преміального тютюну для кальяну, зроблений на основі натуральних природніх та високоякісних інгридієгтів.
 		            Основні принципи компанії:
               </p>
@@ -139,7 +149,7 @@
                 <li><i class="bi bi-check2-all"></i> Натуральність</li>
                 <li><i class="bi bi-check2-all"></i> Багатогранність</li>
               </ul>
-              <p id="aboutText2">
+              <p id="about2">
                 <b>ZODIAC</b> - це не просто суміш для куріння кальяну - а цілий світ і те що поза межами стратосфери в глибокому  космосі, Це те на що Вам вказують зірки у вечірньому небі, це щось невимовно знайоме, але і водночас нове та по езотеричному загадкове…це те, що для Вас відкриє зовсім нові емоції та задовільнить всі Ваші бажання.
               </p>
               <div class="position-relative mt-4">
@@ -160,8 +170,8 @@
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="why-box">
-              <h3>Чому потрібно обрати <b>ZODIAC</b>?</h3>
-              <p style="text-align: justify;">
+              <h3 id="whyUs1">Чому потрібно обрати <b>ZODIAC</b>?</h3>
+              <p id="whyUs2" style="text-align: justify;">
                 <b>ZODIAC</b> - це преміальний український тютюн, на який ми всі давно заслуговуємо, це унікальний бренд який зроблений професіоналами для професіоналів та любителів просто вдома забити смачненьку чашечку, та посидіти з друзями за розмовою. Команда <b>ZODIAC</b> TOBACCO - це люди з досвідом у кальянній індустрії, більше 10 років тому і сам продукт був у розробці більше 3-х років,та скурпульозно доводився до фінального, максимально якісного результату.
                 <b>ZODIAC</b> - це те, що нам всім давно знайоме, та підсвідомо рідне, це щось космічне та незвичне, але надзвичайно смачне. Як і в гороскопі, тут кожен знайде щось для себе…
 
@@ -175,8 +185,8 @@
               <div class="col-xl-4 shadowed" data-aos="fade-up" data-aos-delay="200">
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
                   <img src="assets/img/logo-i.png" alt="Your Alt Text">
-                  <h4>Місія</h4>
-                  <p style="text-align: justify;">
+                  <h4 id="whyUs3">Місія</h4>
+                  <p id="whyUs4" style="text-align: justify;">
                     Створити для людей бренд нового формату, користуючись яким вони можуть: 
                     Легко, доступно та, головне, комфортно обрати для себе бажані мікси та неповторні смаки чи комфортну в майбутньому лінійку міцності в себе в місті чи улюбленому магазині тютюну, чи на сайті у якому звикли робити покупки
                     Постійний супровід та підтримка від кваліфікованих спеціалістів протягом всієї співпраці з закладами чи магазинами. Отримати безпосередній досвід у роботі з нашим брендом. Підвищити свої знання з міксологіі та індустрії загалом.
@@ -187,8 +197,8 @@
               <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
                   <img src="assets/img/logo-i.png" alt="Your Alt Text">
-                  <h4>Мотивація</h4>
-                  <p style="text-align: justify;">
+                  <h4 id="whyUs5">Мотивація</h4>
+                  <p id="whyUs6" style="text-align: justify;">
                     Ми у компанії <b>ZODIAC</b> віримо,що якісний продукт, сервіс найвищого рівня та цілий вир нових відчуттів, емоцій та позитиву, який ви вдихнете з неповторними ароматами нашої смакової палітри, зроблять людей щасливими та задоволеними.
                     Саме це і формує нашу мотивацію та віддзеркалюється на нашій репутації.                    
                   </p>
@@ -198,8 +208,8 @@
               <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
                   <img src="assets/img/logo-i.png" alt="Your Alt Text">
-                  <h4>Філософія</h4>
-                  <p style="text-align: justify;">
+                  <h4 id="whyUs7">Філософія</h4>
+                  <p id="whyUs8" style="text-align: justify;">
                     Сучасний світ має настільки великі та безвимірні можливості в кальянній сфері, так що буває важко зробити для себе будь який важливий вибір.
                     Ми зібрали та проаналізували найактуальніші аромати і продукти, підібрали кваліфікованих спеціалістів з метою економії твого часу та якісного його провадження за ароматною чашечкою кальяну з твоїм улюбленим тютюном ароматом та міцністю.
                     Здобувши бажаний результат, отримавши саме це що тобі потрібно для здійснення твоєї мрії та піднявши свої враження та навички - ми тільки покращуємо цей індустрію та будуємо світле майбутнє, адже щоб змінити цей світ на краще,потрібно почати в першу чергу з себе.
@@ -243,7 +253,7 @@
               <h3>Легка лінійка</h3>
             </div>
 
-            <div class="slides-2 swiper" data-aos="fade-up" data-aos-delay="100">
+            <div class="slides-2 swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="row gy-5">
@@ -589,7 +599,7 @@
 
     <!-- ======= Gallery Section ======= -->
     <section id="gallery" class="gallery section-bg" style="background-image: url('assets/img/back.jpg');">
-      <div class="container" data-aos="fade-up">
+      <div class="container">
 
         <div class="section-header">
           <h2>Галерея</h2>
@@ -635,7 +645,7 @@
               <i class="icon bi bi-map flex-shrink-0"></i>
               <div>
                 <h3>Наша адреса</h3>
-                <p>вулиця Валова 18а, Львів, 00000 - Україна</p>
+                <p id="contact1">вулиця Валова 18а, Львів, 00000 - Україна</p>
               </div>
             </div>
           </div><!-- End Info Item -->
@@ -645,7 +655,7 @@
               <i class="icon bi bi-envelope flex-shrink-0"></i>
               <div>
                 <h3>Напишіть нам</h3>
-                <p>zodiac@gmail.com</p>
+                <p id="contact2">zodiac@gmail.com</p>
               </div>
             </div>
           </div><!-- End Info Item -->
@@ -655,7 +665,7 @@
               <i class="icon bi bi-telephone flex-shrink-0"></i>
               <div>
                 <h3>Зателефонуйте нам</h3>
-                <p>+38 0000000000</p>
+                <p id="contact3">+38 0000000000</p>
               </div>
             </div>
           </div><!-- End Info Item -->
@@ -665,8 +675,8 @@
               <i class="icon bi bi-share flex-shrink-0"></i>
               <div>
                 <h3>Години роботи</h3>
-                <div><strong>Пн-Сб:</strong> 9:00 - 18:00;
-                  <strong>Неділя:</strong> Закрито
+                <div><p id="contact4"><strong>Пн-Сб:</strong> 9:00 - 18:00;
+                  <strong>Неділя:</strong> Закрито</p>
                 </div>
               </div>
             </div>
@@ -704,56 +714,6 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
-
-    <div class="container">
-      <div class="row gy-3">
-        <div class="col-lg-3 col-md-6 d-flex">
-          <i class="bi bi-geo-alt icon"></i>
-          <div>
-            <h4>Адреса</h4>
-            <p>
-              вулиця Валова 18а <br>
-              Львів, 00000 - Україна<br>
-            </p>
-          </div>
-
-        </div>
-
-        <div class="col-lg-3 col-md-6 footer-links d-flex">
-          <i class="bi bi-telephone icon"></i>
-          <div>
-            <h4>Зробити замовлення</h4>
-            <p>
-              <strong>Телефон:</strong> +38 0000000000<br>
-              <strong>Email:</strong> zodiac@gmail.com<br>
-            </p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 footer-links d-flex">
-          <i class="bi bi-clock icon"></i>
-          <div>
-            <h4>Години роботи</h4>
-            <p>
-              <strong>Пн-Сб: 9:00</strong> - 18:00<br>
-              Неділя: Закрито
-            </p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 footer-links">
-          <h4>Слідкуйте за нами</h4>
-          <div class="social-links d-flex">
-            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
     <div class="container">
       <div class="copyright">
         &copy; Авторські права <strong><span>ZODIAC</span></strong>. Усі права захищені
@@ -803,6 +763,296 @@
         document.body.style.overflow = 'hidden';
     });
 });
+  </script>
+
+<script>
+  // Змінна для збереження статусу натискання клавіш 'z' та 't'
+  var isZPressed = false;
+  var isTPressed = false;
+  
+  // Додати обробник події для відслідковування натискання клавіш
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'z') {
+      isZPressed = true;
+    } else if (event.key === 't') {
+      isTPressed = true;
+    }
+  
+    if (isZPressed && isTPressed) {
+      // Показати поп-ап вікно для авторизації
+      document.getElementById("overlay").style.display = "block";
+    }
+  });
+  
+  document.addEventListener('keyup', function(event) {
+    if (event.key === 'z') {
+      isZPressed = false;
+    } else if (event.key === 't') {
+      isTPressed = false;
+    }
+  });
+  
+  // Функція для перевірки авторизації
+  function authenticate() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    // Ваші дані авторизації (можна замінити на реальні дані з бази даних)
+    var validUsername = "admin";
+    var validPassword = "admin123";
+  
+    if (username === validUsername && password === validPassword) {
+      // Авторизація пройшла успішно, робимо елементи редагованими
+      document.getElementById("hero1").setAttribute("contenteditable", "true");
+      document.getElementById("hero2").setAttribute("contenteditable", "true");
+
+      document.getElementById("about1").setAttribute("contenteditable", "true");
+      document.getElementById("about2").setAttribute("contenteditable", "true");
+
+      document.getElementById("whyUs1").setAttribute("contenteditable", "true");
+      document.getElementById("whyUs2").setAttribute("contenteditable", "true");
+      document.getElementById("whyUs3").setAttribute("contenteditable", "true");
+      document.getElementById("whyUs4").setAttribute("contenteditable", "true");
+      document.getElementById("whyUs5").setAttribute("contenteditable", "true");
+      document.getElementById("whyUs6").setAttribute("contenteditable", "true");
+      document.getElementById("whyUs7").setAttribute("contenteditable", "true");
+      document.getElementById("whyUs8").setAttribute("contenteditable", "true");
+
+      document.getElementById("contact1").setAttribute("contenteditable", "true");
+      document.getElementById("contact2").setAttribute("contenteditable", "true");
+      document.getElementById("contact3").setAttribute("contenteditable", "true");
+      document.getElementById("contact4").setAttribute("contenteditable", "true");
+      
+      // Зберігаємо стан авторизації в локальному сховищі
+      localStorage.setItem("authenticated", "true");
+      // Оновлюємо значення редагованих елементів, якщо вони є в локальному сховищі
+      if(localStorage.getItem("headingContent")) {
+        document.getElementById("hero1").innerText = localStorage.getItem("headingContent");
+      }
+      if(localStorage.getItem("paragraphContent")) {
+        document.getElementById("hero2").innerText = localStorage.getItem("paragraphContent");
+      }
+      if(localStorage.getItem("aboutContent1")) {
+        document.getElementById("about1").innerText = localStorage.getItem("aboutContent1");
+      }
+      if(localStorage.getItem("aboutContent2")) {
+        document.getElementById("about2").innerText = localStorage.getItem("aboutContent2");
+      }
+
+      if (localStorage.getItem("whyUsContent1")) {
+        document.getElementById("whyUs1").innerText = localStorage.getItem("whyUsContent1");
+      }
+
+      if (localStorage.getItem("whyUsContent2")) {
+        document.getElementById("whyUs2").innerText = localStorage.getItem("whyUsContent2");
+      }
+
+      if (localStorage.getItem("whyUsContent3")) {
+        document.getElementById("whyUs3").innerText = localStorage.getItem("whyUsContent3");
+      }
+
+      if (localStorage.getItem("whyUsContent4")) {
+        document.getElementById("whyUs4").innerText = localStorage.getItem("whyUsContent4");
+      }
+
+      if (localStorage.getItem("whyUsContent5")) {
+        document.getElementById("whyUs5").innerText = localStorage.getItem("whyUsContent5");
+      }
+
+      if (localStorage.getItem("whyUsContent6")) {
+        document.getElementById("whyUs6").innerText = localStorage.getItem("whyUsContent6");
+      }
+
+      if (localStorage.getItem("whyUsContent7")) {
+        document.getElementById("whyUs7").innerText = localStorage.getItem("whyUsContent7");
+      }
+
+      if (localStorage.getItem("whyUsContent8")) {
+        document.getElementById("whyUs8").innerText = localStorage.getItem("whyUsContent8");
+      }
+
+      if (localStorage.getItem("contactContent1")) {
+        document.getElementById("contact1").innerText = localStorage.getItem("contactContent1");
+      }
+
+      if (localStorage.getItem("contactContent2")) {
+        document.getElementById("contact2").innerText = localStorage.getItem("contactContent2");
+      }
+
+      if (localStorage.getItem("contactContent3")) {
+        document.getElementById("contact3").innerText = localStorage.getItem("contactContent3");
+      }
+
+      if (localStorage.getItem("contactContent4")) {
+        document.getElementById("contactContent4").innerText = localStorage.getItem("contactContent4");
+      }
+
+
+      // Ховаємо поп-ап вікно
+      document.getElementById("overlay").style.display = "none";
+    } else {
+      alert("Invalid username or password!");
+    }
+  }
+  
+  // Функція для збереження змінених значень у локальному сховищі при редагуванні
+  document.getElementById("hero1").addEventListener("input", function() {
+    localStorage.setItem("headingContent", this.innerText);
+  });
+  
+  document.getElementById("hero2").addEventListener("input", function() {
+    localStorage.setItem("paragraphContent", this.innerText);
+  });
+
+  document.getElementById("about1").addEventListener("input", function() {
+    localStorage.setItem("aboutContent1", this.innerText);
+  });
+  
+  document.getElementById("about2").addEventListener("input", function() {
+    localStorage.setItem("aboutContent2", this.innerText);
+  });
+
+  document.getElementById("whyUs1").addEventListener("input", function() {
+    localStorage.setItem("whyUsContent1", this.innerText);
+  });
+  document.getElementById("whyUs2").addEventListener("input", function() {
+    localStorage.setItem("whyUsContent2", this.innerText);
+  });
+  document.getElementById("whyUs3").addEventListener("input", function() {
+    localStorage.setItem("whyUsContent3", this.innerText);
+  });
+  document.getElementById("whyUs4").addEventListener("input", function() {
+    localStorage.setItem("whyUsContent4", this.innerText);
+  });
+  document.getElementById("whyUs5").addEventListener("input", function() {
+    localStorage.setItem("whyUsContent5", this.innerText);
+  });
+  document.getElementById("whyUs6").addEventListener("input", function() {
+    localStorage.setItem("whyUsContent6", this.innerText);
+  });
+  document.getElementById("whyUs7").addEventListener("input", function() {
+    localStorage.setItem("whyUsContent7", this.innerText);
+  });
+  document.getElementById("whyUs8").addEventListener("input", function() {
+    localStorage.setItem("whyUsContent8", this.innerText);
+  });
+
+  document.getElementById("contact1").addEventListener("input", function() {
+    localStorage.setItem("contactContent1", this.innerText);
+  });
+  document.getElementById("contact2").addEventListener("input", function() {
+    localStorage.setItem("contactContent2", this.innerText);
+  });
+  document.getElementById("contact3").addEventListener("input", function() {
+    localStorage.setItem("contactContent3", this.innerText);
+  });
+  document.getElementById("contact4").addEventListener("input", function() {
+    localStorage.setItem("contactContent4", this.innerText);
+  });
+  
+  // Функція для перевірки статусу авторизації при завантаженні сторінки
+  window.onload = function() {
+    var authenticated = localStorage.getItem("authenticated");
+    if (authenticated === "true") {
+      // Відтворюємо стан редагованих елементів, якщо користувач авторизований
+      document.getElementById("hero1").setAttribute("contenteditable", "true");
+      document.getElementById("hero2").setAttribute("contenteditable", "true");
+
+      document.getElementById("about1").setAttribute("contenteditable", "true");
+      document.getElementById("about2").setAttribute("contenteditable", "true");
+
+      document.getElementById("whyUs1").setAttribute("contenteditable", "true");
+      document.getElementById("whyUs2").setAttribute("contenteditable", "true");
+      document.getElementById("whyUs3").setAttribute("contenteditable", "true");
+      document.getElementById("whyUs4").setAttribute("contenteditable", "true");
+      document.getElementById("whyUs5").setAttribute("contenteditable", "true");
+      document.getElementById("whyUs6").setAttribute("contenteditable", "true");
+      document.getElementById("whyUs7").setAttribute("contenteditable", "true");
+      document.getElementById("whyUs8").setAttribute("contenteditable", "true");
+
+      document.getElementById("contact1").setAttribute("contenteditable", "true");
+      document.getElementById("contact2").setAttribute("contenteditable", "true");
+      document.getElementById("contact3").setAttribute("contenteditable", "true");
+      document.getElementById("contact4").setAttribute("contenteditable", "true");
+  
+      var savedHeading = localStorage.getItem("headingContent");
+      var savedParagraph = localStorage.getItem("paragraphContent");
+      if (savedHeading) {
+        document.getElementById("hero1").innerText = savedHeading;
+      }
+      if (savedParagraph) {
+        document.getElementById("hero2").innerText = savedParagraph;
+      }
+
+      var aboutContent1 = localStorage.getItem("aboutContent1");
+      var aboutContent2 = localStorage.getItem("aboutContent2");
+      if (aboutContent1) {
+        document.getElementById("about1").innerText = aboutContent1;
+      }
+      if (aboutContent2) {
+        document.getElementById("about2").innerText = aboutContent2;
+      }
+
+      var whyUsContent1 = localStorage.getItem("whyUsContent1");
+      var whyUsContent2 = localStorage.getItem("whyUsContent2");
+      var whyUsContent3 = localStorage.getItem("whyUsContent3");
+      var whyUsContent4 = localStorage.getItem("whyUsContent4");
+      var whyUsContent5 = localStorage.getItem("whyUsContent5");
+      var whyUsContent6 = localStorage.getItem("whyUsContent6");
+      var whyUsContent7 = localStorage.getItem("whyUsContent7");
+      var whyUsContent8 = localStorage.getItem("whyUsContent8");
+      if (whyUsContent1) {
+        document.getElementById("whyUs1").innerText = whyUsContent1;
+      }
+
+      if (whyUsContent2) {
+        document.getElementById("whyUs2").innerText = whyUsContent2;
+      }
+
+      if (whyUsContent3) {
+        document.getElementById("whyUs3").innerText = whyUsContent3;
+      }
+
+      if (whyUsContent4) {
+        document.getElementById("whyUs4").innerText = whyUsContent4;
+      }
+
+      if (whyUsContent5) {
+        document.getElementById("whyUs5").innerText = whyUsContent5;
+      }
+
+      if (whyUsContent6) {
+        document.getElementById("whyUs6").innerText = whyUsContent6;
+      }
+
+      if (whyUsContent7) {
+        document.getElementById("whyUs7").innerText = whyUsContent7;
+      }
+
+      if (whyUsContent8) {
+        document.getElementById("whyUs8").innerText = whyUsContent8;
+      }
+
+      var contactContent1 = localStorage.getItem("contactContent1");
+      var contactContent2 = localStorage.getItem("contactContent2");
+      var contactContent3 = localStorage.getItem("contactContent3");
+      var contactContent4 = localStorage.getItem("contactContent4");
+      if (contactContent1) {
+        document.getElementById("contact1").innerText = contactContent1;
+      }
+
+      if (contactContent2) {
+        document.getElementById("contact2").innerText = contactContent2;
+      }
+
+      if (contactContent3) {
+        document.getElementById("contact3").innerText = contactContent3;
+      }
+
+      if (contactContent4) {
+        document.getElementById("contact4").innerText = contactContent4;
+      }
+    }
+  }
   </script>
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
