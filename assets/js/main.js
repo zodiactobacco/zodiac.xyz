@@ -165,11 +165,6 @@ document.addEventListener('DOMContentLoaded', () => {
   new Swiper('.slides-2', {
     speed: 1000,
     loop: true,
-    autoplay: {
-      delay: 6000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
